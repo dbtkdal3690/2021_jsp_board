@@ -1,4 +1,4 @@
-package com.jhs.exam.exam2;
+package com.jhs.exam.exam2.servlet;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 
 
 @WebServlet("/usr/home/main")
-public class UsrHomeMain extends HttpServlet {
+public class UsrArticleMainServlet extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
@@ -23,7 +23,7 @@ public class UsrHomeMain extends HttpServlet {
 		// HTML이 UTF-8 형식이라는 것을 브라우저에게 알린다.
 		response.setContentType("text/html; charset=UTF-8");
 
-		response.getWriter().append("안녕");
+		response.getWriter().append("안녕!");
 	}
 
 	
